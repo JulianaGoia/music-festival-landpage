@@ -16,4 +16,18 @@ window.onload = () => {
       ticketMenuItem.classList.add("open");
     }
   });
+
+  const previousBtn = document.getElementById("previous");
+  const nextBtn = document.getElementById("next");
+  const carousel = document.getElementById("carousel");
+
+  nextBtn.addEventListener("click", () => {
+    const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+    carousel.scrollLeft = carousel.scrollLeft + itemWidth;
+  });
+
+  previousBtn.addEventListener("click", () => {
+    const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+    carousel.scrollLeft = carousel.scrollLeft - itemWidth;
+  });
 };
