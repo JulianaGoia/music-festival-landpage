@@ -7,10 +7,10 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <main>
+<body class="dark">
+    <main class="bg-zinc-200 dark:bg-zinc-900">
         <header class="text-zinc-200">
-            <nav class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
+            <nav class="sticky z-10 flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
                 <div class="flex items-center p-4 gap-2">
                     <img src="./assets/logo-inverted.png" width="50" alt="logo">
                     <div class="font-bold text-2xl ">
@@ -52,6 +52,10 @@
                 </div>
                 <!-- Mobile menu -->
                 <div class="hidden flex-1 items-center justify-end md:flex">
+                    <div id="dark-mode-toggle" class="px-2">
+                        <img src="./assets/sun.svg" width="30px" class="dark:hidden">
+                        <img src="./assets/moon.svg" width="30px" class="hidden dark:inline">
+                    </div>
                     <div class="menu-item">
                         <span>Home</span>
                     </div>
@@ -105,54 +109,58 @@
             </div>
         </header>
         <section class="max-w-screen-lg mx-auto mt-20">
-            <h2>Headliners</h2>
-            <p class="">Experience the sonic delight from these made-up artists across 7 days that music fans are calling “one of the many gigs that will happen this year
+            <h2 class="text-zinc-900 dark:text-zinc-200">Headliners</h2>
+            <p class="text-zinc-900 mt-4 mb-8 dark:text-zinc-200">Experience the sonic delight from these made-up artists across 7 days that music fans are calling “one of the many gigs that will happen this year
             </p>
             <div class="flex">
                 <div id="previous" class="flex justify-center items-center cursor-pointer p-2 relative -top-8">
-                    <img src="./assets/chevron-left.svg" width="48px " alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 384 512" class="fill-zinc-900 dark:fill-zinc-200">
+                        <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                    </svg>
                 </div>
                 <!-- carossel -->
                 <div id="carousel" class="flex mt-4 w-full gap-4 pb-5 snap-x overflow-x-auto scroll-smooth">
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band1.jpg')"></div>
-                        <h5 class="mt-2">Arabella</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Arabella</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band2.jpg')"></div>
-                        <h5 class="mt-2">Naive New Beaters</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Naive New Beaters</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band3.jpg')"></div>
-                        <h5 class="mt-2">Courtney Matthews</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Courtney Matthews</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band4.jpg')"></div>
-                        <h5 class="mt-2">Folk Tropical</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Folk Tropical</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band5.jpg')"></div>
-                        <h5 class="mt-2">Horace Abel</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Horace Abel</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band6.jpg')"></div>
-                        <h5 class="mt-2">Opal Quinn</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Opal Quinn</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band7.jpg')"></div>
-                        <h5 class="mt-2">Olivia Williamson</h5>
-                        <h6 class="">1st July 9pm - Main Stage</h6>
+                        <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Olivia Williamson</h5>
+                        <h6 class="text-zinc-900 dark:text-zinc-200">1st July 9pm - Main Stage</h6>
                     </div>
                 </div>
                 <!-- carossel -->
                 <div id="next" class="flex justify-center items-center cursor-pointer p-2 relative -top-8">
-                    <img src="./assets/chevron-right.svg" width="48px " alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48px" viewBox="0 0 384 512" class="fill-zinc-900 dark:fill-zinc-200">
+                        <path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                    </svg>
                 </div>
             </div>
         </section>

@@ -634,6 +634,10 @@ h6{
   top: -2rem;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -675,6 +679,10 @@ h6{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .block{
@@ -899,12 +907,25 @@ h6{
   background-position: center;
 }
 
+.fill-red-800{
+  fill: #991b1b;
+}
+
+.fill-zinc-900{
+  fill: #18181b;
+}
+
 .p-4{
   padding: 1rem;
 }
 
 .p-2{
   padding: 0.5rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-2{
@@ -960,6 +981,11 @@ h6{
 .text-pink-200{
   --tw-text-opacity: 1;
   color: rgb(251 207 232 / var(--tw-text-opacity));
+}
+
+.text-zinc-900{
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
 .placeholder-zinc-500::-moz-placeholder{
@@ -1094,6 +1120,28 @@ h6{
 
 .peer.open ~ .peer-open\:block{
   display: block;
+}
+
+.dark .dark\:inline{
+  display: inline;
+}
+
+.dark .dark\:hidden{
+  display: none;
+}
+
+.dark .dark\:bg-zinc-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:fill-zinc-200{
+  fill: #e4e4e7;
+}
+
+.dark .dark\:text-zinc-200{
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

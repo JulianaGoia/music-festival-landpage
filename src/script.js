@@ -30,4 +30,13 @@ window.onload = () => {
     const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
     carousel.scrollLeft = carousel.scrollLeft - itemWidth;
   });
+
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+  darkModeToggle.addEventListener("click", () => {
+    if (document.body.classList.contains("dark")) {
+      document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
+    }
+  });
 };
