@@ -8,9 +8,104 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    
+    <main>
+        <header class="text-zinc-200">
+            <nav class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
+                <div class="flex items-center p-4 gap-2">
+                    <img src="./assets/logo-inverted.png" width="50" alt="logo">
+                    <div class="font-bold text-2xl ">
+                        tw:<span class="text-sky-900">mf</span>
+                    </div>
+                </div>
+                <!-- Mobile menu -->
+                <div class="block ml-auto pr-4 my-auto cursor-pointer md:hidden">
+                    <!-- Hambuger icon -->
+                    <div id="mob-menu-btn" class="group peer">
+                        <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"></div>
+                        <div class="bg-zinc-200 rounded-full w-8 h-1 my-1 opacity-100 group-open:opacity-0 transition-all"></div>
+                        <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"></div>
+                    </div>
+                    <!-- Hambuger icon -->
+                    <div class="hidden absolute top-[78px] bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0 peer-open:block">
+                        <div class="menu-mob-item">
+                            <span>Home</span>
+                        </div>
+                        <div class="menu-mob-item">
+                            <span>Lineup</span>
+                        </div>
+                        <div id="ticket-menu-item" class="relative h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10 group">
+                            <div class="p-4 text-center font-bold">Tickets</div>
+                            <div class="hidden group-open:block">
+                                <div class="relative text-center p-4 text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
+                                    <span>Single day ticket</span>
+                                </div>
+                                <div class="relative text-center p-4 text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
+                                    <span>7 days ticket</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-mob-item">
+                            <span>Support</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Mobile menu -->
+                <div class="hidden flex-1 items-center justify-end md:flex">
+                    <div class="menu-item">
+                        <span>Home</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Lineup</span>
+                    </div>
+                    <div class="menu-item group">
+                        <span>Tickets</span>
+                        <div class="hidden group-hover:block absolute top-full right-0 whitespace-nowrap bg-pink-500 rounded-b-md text-right">
+                            <div class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200">
+                                <span>Single day ticket</span>
+                            </div>
+                        
+                            <div class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200">
+                                <span>7 days ticket</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span>Support</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex flex-col items-center justify-center min-h-[400px] h-[calc(100vh-200px)] bg-cover bg-center bg-fixed" style="background-image: url('./assets/hero.jpg')">
+                <div class="bg-white/30 py-2 px-4 rounded-xl text-center backdrop-blur-md">
+                    <div class="relative">
+                        <img src="./assets/logo.png" width="200" alt="animated-logo">
+                        <div class="flex items-center justify-center mt-[-77px] mb-5">
+                            <div class="flex items-center justify-center bg-pink-500 w-[60px] h-[60px] rounded-full gap-1">
+                                <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey"></div>
+                                <div class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-200"></div>
+                                <div class="h-4 w-1 bg-pink-100 rounded-full animate-wavey animation-delay-[1500ms]"></div>
+                                <div class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-300"></div>
+                                <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[750ms]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-5xl font-bold">
+                        tw:<span class="text-sky-900">mf</span>
+                    </div>
+                </div>
+                <div class="font-bold mt-3 text-md">
+                    Keep me updated with news and promotions
+                </div>
+               <form class="mt-3 flex gap-2">
+                    <input type="email" placeholder="E-mail" class="rounded-sm border border-white/40 bg-white/30 backdrop-blur-md p-2 font-bold text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500">
+                    <button type="submit" class="cursor-pointer rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">
+                        Subscribe
+                    </button>
+               </form>
+            </div>
+        </header>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

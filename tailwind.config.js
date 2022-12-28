@@ -2,7 +2,24 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        wavey_kf: {
+          "0%, 100%": {
+            tranform: "scaleY(0.5)",
+          },
+          "50%": {
+            transform: "scaleY(1.5)",
+          },
+        },
+      },
+      animation: {
+        wavey: "wavey_kf 1000ms linear infinite",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require("./plugins/openVariant"),
+    require("./plugins/animationDelay"),
+  ],
 };
