@@ -7,11 +7,11 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="dark">
+<body>
     <main class="bg-zinc-200 dark:bg-zinc-900">
         <header class="text-zinc-200">
-            <nav class="sticky z-10 flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
-                <div class="flex items-center p-4 gap-2">
+            <nav class="sticky z-10 flex top-0 px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-500">
+                <div class="flex items-center gap-2">
                     <img src="./assets/logo-inverted.png" width="50" alt="logo">
                     <div class="font-bold text-2xl ">
                         tw:<span class="text-sky-900">mf</span>
@@ -109,8 +109,8 @@
             </div>
         </header>
         <section class="max-w-screen-lg mx-auto mt-20">
-            <h2 class="text-zinc-900 dark:text-zinc-200">Headliners</h2>
-            <p class="text-zinc-900 mt-4 mb-8 dark:text-zinc-200">Experience the sonic delight from these made-up artists across 7 days that music fans are calling “one of the many gigs that will happen this year
+            <h2 class="text-zinc-900 dark:text-zinc-200 px-8 xl:px-0">Headliners</h2>
+            <p class="text-zinc-900 mt-4 mb-8 dark:text-zinc-200 px-8 xl:px-0">Experience the sonic delight from these made-up artists across 7 days that music fans are calling “one of the many gigs that will happen this year
             </p>
             <div class="flex">
                 <div id="previous" class="flex justify-center items-center cursor-pointer p-2 relative -top-8">
@@ -119,7 +119,7 @@
                     </svg>
                 </div>
                 <!-- carossel -->
-                <div id="carousel" class="flex mt-4 w-full gap-4 pb-5 snap-x overflow-x-auto scroll-smooth">
+                <div id="carousel" class="flex mt-4 w-full gap-8 pb-5 snap-x overflow-x-hidden scroll-smooth">
                     <div class="min-w-[80%] md:min-w-[40%]">
                         <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20" style="background-image: url('./assets/band1.jpg')"></div>
                         <h5 class="mt-2 text-zinc-900 dark:text-zinc-200">Arabella</h5>
@@ -164,6 +164,90 @@
                 </div>
             </div>
         </section>
+        <section class="max-w-screen-lg mx-auto mt-20">
+            <h2 class="text-zinc-900 dark:text-zinc-200 px-8 xl:px-0">Lineup</h2>
+            <p class="mt-4 text-zinc-900 dark:text-zinc-200 px-8 xl:px-0">Follow the timetable and stage to ensure you don´t miss your favorite artists</p>
+            <div class="relative mt-5 bg-zinc-800 rounded-lg py-4 px-2 mx-8 xl:mx-0 text-zinc-200">
+                <div class="absolute top-0 left-1/2 w-4 ml-[-8px] h-full rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900">
+                    <div class="sticky top-1/2">
+                        <div class="relative h-4 w-4">
+                            <div class=" absolute h-4 w-4 animate-ping rounded-full bg-pink-500 opacity-75"></div>
+                            <div class="relative h-4 w-4 bg-pink-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="p-2 bg-zinc-900 rounded-lg my-4">
+                        <h4>1st July</h4>
+                    </div>
+                    <div></div>
+                    <div class="text-right">
+                        <div class="font-bold">Arabella</div>
+                        <div class="text-zinc-400">6pm - Sage Stage</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <div class="font-bold">Folk Tropical</div>
+                        <div class="text-zinc-400">6pm - Sage Stage</div>
+                    </div>
+                    <div class="p-2 bg-zinc-900 rounded-lg my-4">
+                        <h4>2th July</h4>
+                    </div>
+                    <div></div>
+                    <div class="text-right">
+                        <div class="font-bold">Courtney Matthews</div>
+                        <div class="text-zinc-400">6pm - Sage Stage</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <div class="font-bold">Naive New Beaters</div>
+                        <div class="text-zinc-400">6pm - Sage Stage</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-screen-lg mx-auto mt-20 mb-40">
+            <h2 class="text-zinc-900 dark:text-zinc-200 mx-8 xl:mx-0">Tickets</h2>
+            <table class="mt-5 table w-full">
+                <thead class="text-lg font-bold">
+                    <td class=" p-3 text-zinc-900 dark:text-zinc-200">Tickets</td>
+                    <td class=" p-3 text-zinc-900 dark:text-zinc-200">Price</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class=" py-2 px-3 text-zinc-900 dark:text-zinc-200">
+                            Single day ticket
+                        </td>
+                        <td class=" py-2 px-3 text-zinc-900 dark:text-zinc-200">
+                            $30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class=" py-2 px-3 text-zinc-900 dark:text-zinc-200">
+                            7 days ticket
+                        </td>
+                        <td class=" py-2 px-3 text-zinc-900 dark:text-zinc-200">
+                            $100
+                        </td>
+                    </tr>
+                </tbody>
+                <caption class="caption-bottom mt-2 text-zinc-900 dark:text-zinc-200">Once they´re gone, they´re gone!!</caption>
+            </table>
+        </section>
+        <footer class="flex items-center justify-between bottom-0 bg-gradient-to-r from-rose-500 to-pink-500 h-28 px-8">
+            <div class="flex items-center gap-2">
+                <img src="./assets/logo-inverted.png" width="50" alt="logo">
+                <div class="font-bold text-2xl ">
+                    tw:<span class="text-sky-900">mf</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <p class="text-sm text-pink-200">@2022 - tw:mf</p>
+                <p class="text-sm text-pink-200">Powered by {)</p>
+            </div>
+        </footer>
     </main>
 
     <script src="./script.js"></script>
