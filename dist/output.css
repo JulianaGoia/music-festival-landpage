@@ -719,16 +719,12 @@ h6{
   margin-bottom: 10rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
+.mt-8{
+  margin-top: 2rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .block{
@@ -1209,6 +1205,10 @@ h6{
 
 .caption-bottom{
   caption-side: bottom;
+}
+
+.caption-top{
+  caption-side: top;
 }
 
 .hover\:bg-white\/10:hover{
