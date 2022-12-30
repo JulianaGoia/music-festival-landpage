@@ -665,14 +665,14 @@ h6{
   margin-right: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .ml-auto{
@@ -719,6 +719,18 @@ h6{
   margin-bottom: 10rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -729,10 +741,6 @@ h6{
 
 .table{
   display: table;
-}
-
-.table-column{
-  display: table-column;
 }
 
 .grid{
@@ -775,14 +783,6 @@ h6{
   height: 20rem;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
-.h-32{
-  height: 8rem;
-}
-
 .h-28{
   height: 7rem;
 }
@@ -811,10 +811,6 @@ h6{
   width: 1rem;
 }
 
-.w-11\/12{
-  width: 91.666667%;
-}
-
 .min-w-\[80\%\]{
   min-width: 80%;
 }
@@ -825,18 +821,6 @@ h6{
 
 .flex-1{
   flex: 1 1 0%;
-}
-
-.table-auto{
-  table-layout: auto;
-}
-
-.table-fixed{
-  table-layout: fixed;
-}
-
-.border-collapse{
-  border-collapse: collapse;
 }
 
 @keyframes wavey_kf{
@@ -908,20 +892,8 @@ h6{
   gap: 0.25rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-8{
   gap: 2rem;
-}
-
-.gap-11{
-  gap: 2.75rem;
-}
-
-.overflow-x-auto{
-  overflow-x: auto;
 }
 
 .overflow-x-hidden{
@@ -963,11 +935,6 @@ h6{
 
 .border-white\/40{
   border-color: rgb(255 255 255 / 0.4);
-}
-
-.border-zinc-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(113 113 122 / var(--tw-border-opacity));
 }
 
 .bg-zinc-200{
@@ -1070,6 +1037,16 @@ h6{
   padding: 0.75rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1085,29 +1062,9 @@ h6{
   padding-right: 1rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pr-4{
@@ -1116,10 +1073,6 @@ h6{
 
 .pb-5{
   padding-bottom: 1.25rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
 }
 
 .text-center{
@@ -1354,18 +1307,6 @@ h6{
 
   .md\:min-w-\[40\%\]{
     min-width: 40%;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
